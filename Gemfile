@@ -32,7 +32,10 @@ gem 'devise'
 group :development do
 	gem 'capistrano'
 	gem 'foreman'
-	gem 'rb-fsevent', :require => false if RUBY_PLATFORM =~ /darwin/i
+	group :darwin do
+		gem 'rb-fsevent', :require => false
+		gem 'guard-pow', :require => false
+	end
 	gem 'guard-livereload', require: false
 end
 
