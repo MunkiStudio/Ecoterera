@@ -13,26 +13,18 @@ group :assets do
 end
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-# gem 'therubyracer', platforms: :ruby
+gem 'therubyracer', platforms: :ruby
 
 gem 'jquery-rails'
-
 gem 'turbolinks'
+gem 'less-rails-bootstrap', '~> 3.0.0.wip', github: 'sinfin/less-rails-bootstrap-3'
 
-# Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
-# gem 'jbuilder', '~> 1.2'
-
-group :doc do
-  # bundle exec rake doc:rails generates the API under doc/api.
-  gem 'sdoc', require: false
-end
 
 # Use ActiveModel has_secure_password
 gem 'bcrypt-ruby', '~> 3.0.0'
 
 # Use unicorn as the app server
 gem 'unicorn'
-
 gem 'devise'
 
 # Use Capistrano for deployment
@@ -43,9 +35,9 @@ end
 
 gem 'rspec-rails', group: [:development, :test]
 group :test do 
-	gem 'cucumber-rails'
 	gem 'database_cleaner'
 	gem 'factory_girl_rails'
+	gem 'sqlite3'
 end
 # Use debugger
 # gem 'debugger', group: [:development, :test]
