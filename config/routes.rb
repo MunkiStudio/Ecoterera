@@ -3,9 +3,7 @@ Ecotetera::Application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  root 'static_pages#home'
-  get 'about' => 'static_pages#about'
-  get 'contacto' => 'static_pages#contacto'
+  root 'application#index'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
@@ -41,7 +39,7 @@ Ecotetera::Application.routes.draw do
   #       get 'recent', on: :collection
   #     end
   #   end
-  
+
   # Example resource route with concerns:
   #   concern :toggleable do
   #     post 'toggle'

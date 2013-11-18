@@ -1,0 +1,499 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *= require twitter/bootstrap
+ *= require_self
+ * require_tree .
+ */
+@import "twitter/bootstrap/variables";
+@import "twitter/bootstrap/mixins";
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+
+
+html, body{
+	height: 100%;
+}
+
+header{
+	margin-top:20px;
+	margin-bottom:20px;
+}
+
+#welcome{
+	background:url('/assets/img_main.jpg') no-repeat center center;
+	height:555px;
+	background-size: cover;
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale');
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')";
+}
+
+.banner{
+	&.top{
+		margin-top:130px;
+		height:280px;
+		.opacity(0.7);
+		background-color:#FFFFFF;
+		.make-lg-column(7);
+		.make-lg-column-offset(3);
+		.make-md-column(7);
+		.make-md-column-offset(4);
+		.make-sm-column(7);
+		.make-sm-column-offset(4);
+		@media (min-width: @screen-lg-min) {
+			margin-left:25%;
+		}
+		@media (min-width: @screen-md-min) and (max-width: @screen-md-max){
+			margin-left:31.33333333333333%;
+		}
+
+		h1{
+			font-family: 'Domine', serif;
+			font-weight: bold;
+			color:#566c04;
+			margin-left:12.333333333333332% !important;
+			margin-top:75px;
+			text-align: center;
+			.make-lg-column(10);
+			.make-lg-column-offset(1);
+			.make-sm-column(10);
+			.make-sm-column-offset(1);
+			@media (min-width: @screen-lg-min) {
+				font-size:90px;
+			}
+			@media (min-width: @screen-md-min) and (max-width: @screen-md-max){
+				font-size:70px;
+			}
+			@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+				font-size:58px;
+			}
+
+		}
+		p{
+			font-family: 'Open Sans', sans-serif;
+			font-style: italic;
+			font-size:30px;
+			color:white;
+			background-color:#566c04;
+			margin-top:30px !important;
+			margin-bottom:57px !important;
+			.make-lg-column(6);
+			.make-lg-column-offset(3);
+			@media (min-width: @screen-lg-min) {
+				margin-left:22% !important;
+			}
+			.make-md-column(7);
+			.make-md-column-offset(2);
+			@media (min-width: @screen-md-min) and (max-width: @screen-md-max){
+				margin-left:25%;
+			}
+			.make-sm-column(7);
+			.make-sm-column-offset(3);
+			@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+				font-size:20px;
+				margin-left:22%;
+			}
+			text-align: center;
+		}
+
+	}
+}
+
+
+.container{
+	margin-left:10px;
+	margin-right: 10px;
+}
+
+div.title{
+	border-top:2px #566c04 solid;
+	border-bottom:2px #566c04 solid;
+	.make-lg-column(4);
+	.make-lg-column-offset(3);
+	.make-md-column(6);
+	.make-md-column-offset(4);
+	@media (min-width: @screen-lg-min) {
+		margin-left:27.3% !important;
+	}
+	.make-sm-column(7);
+	.make-sm-column-offset(4);
+	margin-bottom: 50px;
+	text-align: center;
+	padding:10px;
+	.center-block();
+	h1{
+		font-family: 'Domine', serif;
+		font-weight: bold;
+		font-size:2.143em;
+		color:#566c04;
+		margin:0;
+		padding:0;
+	}
+	h4{
+		font-family: 'Open Sans', sans-serif;
+		font-style: italic;
+		font-size:20px;
+		color:#5f5f5f;
+	}
+
+}
+
+div.title2{
+	.make-lg-column(5);
+	.make-lg-column-offset(3);
+	.make-md-column(6);
+	.make-md-column-offset(4);
+	.make-sm-column(7);
+	.make-sm-column-offset(4);
+	@media (min-width: @screen-lg-min) {
+		margin-left:27.3% !important;
+	}
+	text-align: center;
+	.center-block();
+	margin-bottom: 20px;
+	h1{
+		font-family: 'Domine', serif;
+		margin:0;
+		padding:0;
+		color:#ffffff;
+		font-size:38px;
+	}
+}
+
+#about{
+	margin-top:80px;
+	margin-bottom:80px;
+	p{
+		text-align:center;
+		font-size:21px;
+		font-family: 'Domine',serif;
+		color:#4a4a4a;
+		.make-lg-column(12);
+		.make-md-column(12);
+		.make-sm-column(12);
+		@media (min-width: @screen-lg-min) {
+			margin-left:30px !important;
+		}
+		@media (min-width: @screen-md-min) and (max-width: @screen-md-max){
+			margin-left:8%;
+		}
+		@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+			margin-left:12%;
+		}
+
+
+	}
+
+
+}
+
+#te{
+	padding-top:50px;
+	padding-bottom:42px;
+	background:url('/assets/img_motivo.jpg');
+	img{
+		margin-bottom: 40px;
+		.center-block();
+	}
+	p.title{
+		font-family: 'Open Sans', sans-serif;
+		font-style: bold;
+		font-size:21px;
+		text-align: center;
+		color:#5f5f5f;
+		margin-bottom: 20px;
+		.center-block();
+	}
+	p{
+		max-width:350px;
+		font-family: 'Open Sans', sans-serif;
+		font-size:16px;
+		text-align: center;
+		color:#5f5f5f;
+		.center-block();
+	}
+	.second{
+		margin-top:28px;
+		@media (min-width: @screen-md-min) and (max-width: @screen-md-max){
+			margin-left:15%;
+		}
+		@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+			margin-left:15%;
+		}
+	}
+	.first{
+		@media (min-width: @screen-lg-min) {
+			margin-left:5%;
+		}
+		@media (min-width: @screen-md-min) and (max-width: @screen-md-max){
+			margin-left:15%;
+		}
+
+		@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+			margin-left:15%;
+		}
+	}
+}
+
+#blackboard{
+	.superior{
+		background:url('/assets/marco_arriba.png');
+		width:100%;
+		height: 81px;
+	}
+	.inferior{
+		background:url('/assets/marco_abajo.png');
+		width: 100%;
+		height:66px;
+	}
+
+	.center{
+		background-color:#282828;
+		width:100%;
+		.title{
+			border-top:2px #FFFFFF solid;
+			border-bottom:2px #FFFFFF solid;
+			h1{
+				color:#ffffff;
+				font-size:42px;
+			}
+		}
+		.content{
+			.make-lg-column(7);
+			.make-md-column(8);
+			.make-md-column-offset(3);
+			.make-sm-column(12);
+			.make-sm-column-offset(1);
+			@media (min-width: @screen-lg-min) {
+				margin-left:5.3%;
+			}
+			@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+				margin-left:10%;
+			}
+			text-align: center;
+			.center-block();
+			margin-bottom: 10px;
+
+			p{
+				color:#ffffff;
+				font-family: 'Domine',sans-serif;
+				font-size:20px;
+			}
+		}
+		.image{
+			margin-top:60px;
+			margin-bottom: 60px;
+		}
+	}
+}
+
+#productos{
+	background:url('/assets/img_motivo.jpg');
+	padding-top:50px;
+	padding-bottom:60px;
+	#carousel{
+		@media (min-width: @screen-md-min) and (max-width: @screen-md-max){
+			margin-left:-10%;
+		}
+
+		@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+			margin-left:20%;
+		}
+	}
+	.item{
+		.row{
+			@media (min-width: @screen-lg-min) {
+				margin-left:6px;
+			}
+			@media (min-width: @screen-md-min) and (max-width: @screen-md-max){
+				margin-left:-12px;
+			}
+
+		}
+	}
+
+	.caption{
+		color:#ffffff;
+		font-family: 'Domine', serif;
+		text-align: center;
+		background-color: #000;
+		height: 120px;
+		.opacity(0.8);
+		@media (min-width: @screen-lg-min) {
+			max-width:300px;
+			width: 300px;
+		}
+		@media (min-width: @screen-md-min) and (max-width: @screen-md-max){
+			display: block;
+			max-width: 100%;
+		}
+
+		@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+			display: block;
+			max-width: 100%;
+		}
+
+		p.title{
+			font-weight: bold;
+			font-size:22px;
+			@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+				font-size:16px !important;
+			}
+		}
+		p{
+			font-family: 'Open Sans',sans-serif;
+			font-size:15px;
+			@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+				font-size:12px !important;
+			}
+		}
+
+	}
+
+	.carousel-control{
+		width:5%;
+		&.left{
+			left:-17px;
+		}
+		&.right{
+			right:-15px;
+		}
+		.glyphicon-chevron-left{
+			@media (min-width: @screen-lg-min) {
+				left:20%;
+			}
+			@media (min-width: @screen-md-min) and (max-width: @screen-md-max){
+				left:2%;
+			}
+
+		}
+		.glyphicon-chevron-right{
+			@media (min-width: @screen-lg-min) {
+				right:20%;
+			}
+			@media (min-width: @screen-md-min) and (max-width: @screen-md-max){
+				right:2%;
+			}
+		}
+
+	}
+
+	.carousel-indicators{
+		bottom:0px;
+	}
+}
+
+#contacto{
+	padding-top:50px;
+	padding-bottom:30px;
+	#map_canvas{
+		height: 360px;
+	}
+	button{
+		width:100%;
+	}
+}
+
+footer{
+	.first{
+		padding-top:30px;
+		background-color:#5f5f5f;
+		height:145px;
+		p{
+			color:#ffffff;
+			font-family: 'Open Sans',sans-serif;
+			font-size:17px;
+			@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+				font-size:12px;
+			}
+		}
+		#logo{
+			margin-bottom:40px;
+		}
+		#direccion{
+			@media (min-width: @screen-lg-min) {
+				margin-left:35px;
+			}
+			@media (min-width: @screen-md-min) and (max-width: @screen-md-max){
+				margin-left:45px;
+			}
+			@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+				margin-left:65px;
+			}
+
+		}
+		#social{
+			font-family: 'Domine',serif;
+			font-size:17px;
+			color:#ffffff;
+			text-align: right;
+			margin-bottom:40px;
+			.first{
+				height: auto;
+				padding:0;
+				margin-right:25px;
+			}
+			.second{
+				height: auto;
+				padding:0;
+				margin-right:30px;
+			}
+			.facebook{
+				height: 40px;
+				width: 40px;
+				background:url('/assets/btn_fb_normal.png') no-repeat ;
+				&:hover,&:active{
+					background:url('/assets/btn_fb_sobre.png') no-repeat ;
+				}
+			}
+			.twitter{
+				height: 40px;
+				width: 40px;
+				background:url('/assets/btn_tw_normal.png') no-repeat;
+				&:hover,&:active{
+					background:url('/assets/btn_tw_sobre.png') no-repeat ;
+				}
+			}
+
+		}
+	}
+	.second{
+		height: 35px;
+		background-color:#343434;
+		.col-lg-3{
+			@media (min-width: @screen-lg-min) {
+				margin-right:-1.5%;
+			}
+		}
+		.col-md-3{
+			@media (min-width: @screen-md-min) and (max-width: @screen-md-max){
+				margin-right: -1.8%;
+			}
+			@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+				margin-right: -3.2%;
+			}
+
+		}
+		p{
+			color:#ffffff;
+			font-family: 'Open Sans',sans-serif;
+			font-size:13px;
+			text-align: right;
+			@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+				font-size:11px;
+			}
+		}
+	}
+
+}

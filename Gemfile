@@ -6,7 +6,7 @@ gem 'rails', '4.0.0'
 
 gem 'mysql2', group: :development
 
-group :assets do 
+group :assets do
 	gem 'sass-rails', '~> 4.0.0'
 	gem 'uglifier', '>= 1.3.0'
 	gem 'coffee-rails', '~> 4.0.0'
@@ -17,8 +17,9 @@ gem 'therubyracer', platforms: :ruby
 
 gem 'jquery-rails'
 gem 'turbolinks'
-gem 'less-rails-bootstrap', '~> 3.0.0.wip', github: 'sinfin/less-rails-bootstrap-3'
+gem 'less-rails-bootstrap'
 
+gem 'negative_captcha'
 
 # Use ActiveModel has_secure_password
 gem 'bcrypt-ruby', '~> 3.0.0'
@@ -28,13 +29,15 @@ gem 'unicorn'
 gem 'devise'
 
 # Use Capistrano for deployment
-group :development do 
+group :development do
 	gem 'capistrano'
 	gem 'foreman'
+	gem 'rb-fsevent', :require => false if RUBY_PLATFORM =~ /darwin/i
+	gem 'guard-livereload', require: false
 end
 
 gem 'rspec-rails', group: [:development, :test]
-group :test do 
+group :test do
 	gem 'database_cleaner'
 	gem 'factory_girl_rails'
 	gem 'sqlite3'
@@ -42,7 +45,7 @@ end
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
-group :production do 
+group :production do
 	gem 'pg'
 	gem 'rails_12factor'
 end
