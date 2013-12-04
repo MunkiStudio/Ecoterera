@@ -27,4 +27,13 @@ Ecotetera::Application.configure do
   # number of complex assets.
   config.assets.debug = true
 
+  # config.action_mailer.delivery_method = :smtp
+  # config.action_mailer.smtp_settings = {
+  #   address: "smtp.zoho.com",
+  #   port: 465,
+  #   authentication: "login",
+  #   user_name: ENV["MAIL_USERNAME"],
+  #   password: ENV["MAIL_PASSWORD"]
+  # }
+
 end

@@ -10,6 +10,9 @@ GEM
       erubis (~> 2.7.0)
       rack (~> 1.5.2)
       rack-test (~> 0.6.2)
+    active_attr (0.8.2)
+      activemodel (>= 3.0.2, < 4.1)
+      activesupport (>= 3.0.2, < 4.1)
     activemodel (4.0.0)
       activesupport (= 4.0.0)
       builder (~> 3.1.0)
@@ -44,6 +47,7 @@ GEM
       execjs
     coffee-script-source (1.6.3)
     commonjs (0.2.7)
+    connection_pool (1.2.0)
     database_cleaner (1.2.0)
     devise (3.2.1)
       bcrypt-ruby (~> 3.0)
@@ -119,6 +123,8 @@ GEM
     orm_adapter (0.5.0)
     pg (0.17.0)
     polyglot (0.3.3)
+    pony (1.6.1)
+      mail (>= 2.0)
     pry (0.9.12.3)
       coderay (~> 1.0)
       method_source (~> 0.8)
@@ -149,6 +155,9 @@ GEM
     rb-fsevent (0.9.3)
     rb-inotify (0.9.2)
       ffi (>= 0.5.0)
+    redis (3.0.6)
+    redis-namespace (1.3.2)
+      redis (~> 3.0.4)
     ref (1.0.5)
     rspec-core (2.14.7)
     rspec-expectations (2.14.4)
@@ -166,6 +175,12 @@ GEM
       railties (>= 4.0.0, < 5.0)
       sass (>= 3.1.10)
       sprockets-rails (~> 2.0.0)
+    sidekiq (2.17.0)
+      celluloid (>= 0.15.2)
+      connection_pool (>= 1.0.0)
+      json
+      redis (>= 3.0.4)
+      redis-namespace (>= 1.3.1)
     slop (3.4.7)
     sprockets (2.10.0)
       hike (~> 1.2)
@@ -212,6 +227,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  active_attr
   bcrypt-ruby (~> 3.0.0)
   capistrano
   coffee-rails (~> 4.0.0)
@@ -226,11 +242,13 @@ DEPENDENCIES
   mysql2
   negative_captcha
   pg
+  pony
   rails (= 4.0.0)
   rails_12factor
   rb-fsevent
   rspec-rails
   sass-rails (~> 4.0.0)
+  sidekiq
   sqlite3
   therubyracer
   turbolinks
