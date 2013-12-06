@@ -14,7 +14,7 @@
 //= require jquery_ujs
 //= require turbolinks
 // require twitter/bootstrap
-//= require twitter/bootstrap/carousel
+//= require twitter/bootstrap/modal
 // require_tree .
 
 $(document).ready(function(){

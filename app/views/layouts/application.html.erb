@@ -82,13 +82,95 @@
 
 					<div class="row">
 						<div class="col-lg-2 col-xs-4 pull-right">
-							<p>Diseñado y desarrollo por Kimun!</p>
+							<p>Web creada por <a hreF="#"  data-toggle="modal" data-target="#modal-kimun"> Kimun!</a></p>
 						</div>
 					</div>
 
 			</div>
 
 		</footer>
+
+		<div class="modal fade" id="modal-kimun" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="true">
+		  <div class="modal-dialog">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+		        <h4 class="modal-title" id="myModalLabel">Creado por <strong>Kimun!</strong></h4>
+		      </div>
+		      <div class="modal-body">
+		      	<div class="row">
+		      		<div class="col-lg-6">
+			        	<div class="row">
+			        		<div class="col-lg-11">
+			        			<%= image_tag 'img_MH.png' %>
+			        		</div>
+			        	</div>
+						<div class="row">
+							<div class="col-lg-11">
+			        			<h3>Matías Hernández</h3>
+			        		</div>
+						</div>
+						<div class="row">
+							<div class="col-lg-11">
+								<p>
+								<ul>
+									<li>Ingeniero Civil Informático  - CTO </li>
+									<li>Desarrollo, Implementación e Innovación</li>
+									<li>Candidato a Magister en Ciencias de la Computación</li>
+									<li>Docente UCM e Inacapa Talca</li>
+									<li><a href="http://www.twitter.com/msdark">@msdark</a></li>
+									<li><a href="http://www.github.com/msdark">GitHub</a></li>
+								</ul>
+								</p>
+							</div>
+						</div>
+
+			        </div>
+			        <div class="col-lg-6">
+			        	<div class="row">
+			        		<div class="col-lg-11">
+			        			<%= image_tag 'img_CM.png' %>
+			        		</div>
+			        	</div>
+			        	<div class="row">
+			        		<div class="col-lg-11">
+			        			<h3>Camilo Muñoz</h3>
+			        		</div>
+			        	</div>
+			        	<div class="row">
+							<div class="col-lg-11">
+								<p>
+								<ul>
+									<li>Diseñador de Productos - CDO </li>
+									<li>Diseño UI & UX</li>
+									<li>Máster en Diseño industrial y desarrollo de productos</li>
+									<li><a href="http://www.twitter.com/oinkmypork">@oinkmypork</a></li>
+									<li><a href="http://www.behance.net/oinkme">Mi Behance</a></li>
+									<li><a href="http://flickr.com/ozonitos">Flickr</a></li>
+								</ul>
+								</p>
+							</div>
+						</div>
+			        </div>
+		      	</div>
+
+			  </div>
+ 			  <div class="model-footer">
+ 			    <hr />
+ 			  	<div class="row">
+ 			  		<div class="col-lg-6 col-lg-offset-2">
+ 			  			<h4 style="margin-top:0px">Contactanos!</h4>
+ 			  		</div>
+ 			  		<div class="col-lg-4">
+ 			  			<a href="mailto:matiasfh@gmail.com">Desarrollo</a> y <a href="mailto:munoz.donoso@gmail.com">Diseño</a>
+ 			  		</div>
+ 			  	</div>
+
+ 			  </div>
+
+		    </div><!-- /.modal-content -->
+		  </div><!-- /.modal-dialog -->
+		</div><!-- /.modal -->
 	</body>
 
 	<%= javascript_include_tag params[:controller], "data-turbolinks-track" => true %>
