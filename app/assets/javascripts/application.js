@@ -18,7 +18,7 @@
 // require_tree .
 
 $(document).ready(function(){
-	var address = "4 1/2 norte #3457, Talca, Chile";
+	var address = "siete oriente 1200, Talca, Chile";
 	var geocoder = new google.maps.Geocoder();
 	geocoder.geocode( { "address": address }, function(results, status) {
 		if (status == google.maps.GeocoderStatus.OK) {

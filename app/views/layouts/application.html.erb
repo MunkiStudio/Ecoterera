@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:fb="http://ogp.me/ns/fb#">
 <head>
 	<meta name="google-site-verification" content="VFwHuJWItU-0iBzkvhQZFSy9KAyj2IJ6FhFh2mQTo-k" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	<meta name="description" content="">
 	<meta name="author" content="Matías Hernández <matiasfh@gmail.com>">
+	<meta property="og:image" content="/assets/logo_header.png" />
 	<title>Ecotetera</title>
 	<link href='http://fonts.googleapis.com/css?family=Domine:400,700' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700' rel='stylesheet' type='text/css'>
@@ -163,7 +165,7 @@
  			  			<h4 style="margin-top:0px">Contáctanos!</h4>
  			  		</div>
  			  		<div class="col-lg-4">
- 			  			<a href="mailto:matiasfh@gmail.com">Desarrollo</a> y <a href="mailto:munoz.donoso@gmail.com">Diseño</a>
+ 			  			<a href="mailto:matias@munki.cl">Desarrollo</a> y <a href="mailto:camilo@munki.cl">Diseño</a>
  			  		</div>
  			  	</div>
 
@@ -179,4 +181,14 @@
 	<%= javascript_include_tag 'galleria/plugins/facebook/galleria.facebook.js', "data-turbolinks-track" => true %>
 
 	<%= yield :javascript_extra %>
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-46450705-1', 'ecotetera.cl');
+		ga('send', 'pageview');
+
+	</script>
 	</html>
