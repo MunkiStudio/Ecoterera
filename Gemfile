@@ -18,6 +18,7 @@ gem 'therubyracer', platforms: :ruby
 gem 'jquery-rails'
 gem 'turbolinks'
 gem 'less-rails-bootstrap'
+gem 'actionpack-page_caching'
 
 gem 'negative_captcha'
 
