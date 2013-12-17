@@ -19,6 +19,7 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'less-rails-bootstrap'
 gem 'actionpack-page_caching'
+gem 'rack-cache'
 
 gem 'negative_captcha'
 
