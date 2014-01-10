@@ -48,10 +48,10 @@ Nuestros tés y especies son completamente naturales, es por esto que te invitam
 			<div class="first">
 
 					<div class="row">
-						<div class="col-lg-1 col-lg-offset-1 col-md-1 col-md-offset-1 col-sm-1 col-sm-offset-1 col-xs-2" id="logo">
+						<div class="col-lg-1 col-lg-offset-1 col-md-1 col-md-offset-1 col-sm-1 col-sm-offset-1 col-xs-4" id="logo">
 							<%=image_tag 'logo_footer.png' %>
 						</div>
-						<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3" id="direccion">
+						<div class="col-lg-3 col-md-3 col-sm-3 col-xs-5" id="direccion">
 							<p>Edificio Plaza Suiza
 							<br />
 							(Plaza de los Tulipanes)
@@ -92,8 +92,8 @@ Nuestros tés y especies son completamente naturales, es por esto que te invitam
 			<div id="powered">
 
 					<div class="row">
-						<div class="col-lg-2 col-xs-4 pull-right">
-							<p>Web creada por <a hreF="#"  data-toggle="modal" data-target="#modal-kimun"> Munki!</a></p>
+						<div class="col-lg-2 col-xs-5 pull-right">
+							<p>Web creada por <a href="http://www.munki.cl" target="_blank"> Munki!</a></p>
 						</div>
 					</div>
 
@@ -101,89 +101,7 @@ Nuestros tés y especies son completamente naturales, es por esto que te invitam
 
 		</footer>
 
-		<div class="modal fade" id="modal-kimun" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="true">
-		  <div class="modal-dialog">
-		    <div class="modal-content">
-		      <div class="modal-header">
-		        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-		        <h4 class="modal-title" id="myModalLabel">Creado por <img src="/assets/logo_munki.png" style="
-    width: 8%;
-"></h4>
-		      </div>
-		      <div class="modal-body">
-		      	<div class="row">
-		      		<div class="col-lg-6">
-			        	<div class="row">
-			        		<div class="col-lg-11">
-			        			<%= image_tag 'zimg_MH.png' %>
-			        		</div>
-			        	</div>
-						<div class="row">
-							<div class="col-lg-11">
-			        			<h3>Matías Hernández</h3>
-			        		</div>
-						</div>
-						<div class="row">
-							<div class="col-lg-11">
-								<p>
-								<ul>
-									<li>Ingeniero Civil Informático  - CTO </li>
-									<li>Desarrollo, Implementación e Innovación</li>
-									<li>Candidato a Magister en Ciencias de la Computación</li>
-									<li>Docente UCM e Inacap Talca</li>
-									<li><a href="http://www.twitter.com/msdark">@msdark</a></li>
-									<li><a href="http://www.github.com/msdark">GitHub</a></li>
-								</ul>
-								</p>
-							</div>
-						</div>
 
-			        </div>
-			        <div class="col-lg-6">
-			        	<div class="row">
-			        		<div class="col-lg-11">
-			        			<%= image_tag 'zimg_CM.png' %>
-			        		</div>
-			        	</div>
-			        	<div class="row">
-			        		<div class="col-lg-11">
-			        			<h3>Camilo Muñoz</h3>
-			        		</div>
-			        	</div>
-			        	<div class="row">
-							<div class="col-lg-11">
-								<p>
-								<ul>
-									<li>Diseñador de Productos - CDO </li>
-									<li>Diseño UI & UX</li>
-									<li>Máster en Diseño industrial y desarrollo de productos</li>
-									<li><a href="http://www.twitter.com/oinkmypork">@oinkmypork</a></li>
-									<li><a href="http://www.behance.net/oinkme">Mi Behance</a></li>
-									<li><a href="http://flickr.com/ozonitos">Flickr</a></li>
-								</ul>
-								</p>
-							</div>
-						</div>
-			        </div>
-		      	</div>
-
-			  </div>
- 			  <div class="model-footer">
- 			    <hr />
- 			  	<div class="row">
- 			  		<div class="col-lg-6 col-lg-offset-2">
- 			  			<h4 style="margin-top:0px">Contáctanos!</h4>
- 			  		</div>
- 			  		<div class="col-lg-4">
- 			  			<a href="mailto:matias@munki.cl">Desarrollo</a> y <a href="mailto:camilo@munki.cl">Diseño</a>
- 			  		</div>
- 			  	</div>
-
- 			  </div>
-
-		    </div><!-- /.modal-content -->
-		  </div><!-- /.modal-dialog -->
-		</div><!-- /.modal -->
 	</body>
 
 	<%= javascript_include_tag params[:controller], "data-turbolinks-track" => true %>
